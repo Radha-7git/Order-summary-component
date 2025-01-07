@@ -15,7 +15,7 @@ This project is a responsive **Order Summary Card** built using **HTML**, **CSS*
 ## Screenshots
 
 ### Mobile View
-![Mobile View](./images/mobile-screenshot.png)
+![Mobile View](./screenshot/sample.png)
 
 ## Technologies Used
 
