@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="build.css" />
+    <script src="anim.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <title>Order summary card</title>
+  </head>
+  <body
+    class="min-h-screen flex items-center justify-center bg-[url('./images/pattern-background-mobile.svg')] bg-no-repeat bg-contain font-redhat bg-Pale_blue lg:bg-[url('./images/pattern-background-desktop.svg')]"
+  >
+    <article
+      class="w-[88%] max-w-[400px] rounded-2xl overflow-hidden shadow-2xl bg-Very_pale_blue"
+    >
+      <div class="hover:scale-110 duration-500 ease-in-out">
+        <img
+          class="block w-full custom-hero"
+          src="./images/illustration-hero.svg"
+          alt=""
+        />
+      </div>
+      <main class="p-6 lg:p-10">
+        <div class="text-center mt-3">
+          <h1 class="text-Dark_blue font-extrabold text-xl custom-head">
+            Order Summary
+            <i class="fas fa-shopping-bag ml-2 animate-bounce"></i>
+          </h1>
+          <p class="mt-3 text-Desaturated_blue custom-para">
+            You can now listen to millions of songs,audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+        </div>
+        <div
+          class="flex items-center justify-between bg-grayish_blue p-3 rounded-lg mt-8 custom-price"
+        >
+          <div class="flex items-center gap-4">
+            <img class="custom-music" src="./images/icon-music.svg" alt="" />
+            <div>
+              <h2 class="text-Dark_blue font-extrabold text-sm">Annual Plan</h2>
+              <p class="text-sm text-Desaturated_blue">$59.99/year</p>
+            </div>
+          </div>
+          <div>
+            <a
+              class="underline text-sm text-Bright_blue font-bold hover:no-underline hover:text-Bright_blue_o"
+              href="#"
+              >Change</a
+            >
+          </div>
+        </div>
+        <div
+          class="mt-8 custom-button shadow-xl cursor-pointer overflow-hidden"
+        >
+          <button
+            class="w-full bg-Bright_blue text-Very_pale_blue py-3 px-6 font-bold text-sm hover:bg-Bright_blue_o duration-500"
+            id="checkout"
+          >
+            Proceed to Payment
+          </button>
+        </div>
+        <div class="text-center mt-4 custom-cancel">
+          <a
+            href="#"
+            class="font-extrabold text-Desaturated_blue text-sm hover:text-Dark_blue"
+          >
+            Cancel Order
+          </a>
+        </div>
+      </main>
+    </article>
+  </body>
+</html>
